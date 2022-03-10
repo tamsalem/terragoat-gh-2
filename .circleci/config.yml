@@ -9,7 +9,7 @@ jobs:
       - bridgecrew/install
       - bridgecrew/scan:
           directory: "./terraform"
-          api-key-variable: BC_API_TOKEN
+          api-key-variable: dfaf713c-a01f-42f5-a5dd-e08f1ef97e94
 #           prisma-api-url-variable: PRISMA_API_URL
           soft-fail: true
           output: json
@@ -18,5 +18,5 @@ workflows:
     jobs:
       - bridgecrew/bridgecrew_scan:
           directory: "./terraform"
-          api-key-variable: BC_API_TOKEN
+          api-key-variable: dfaf713c-a01f-42f5-a5dd-e08f1ef97e94
       - bridgecrew-commands
